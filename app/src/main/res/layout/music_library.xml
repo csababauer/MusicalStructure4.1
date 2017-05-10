@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructure4.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/boxcolor"
+                    android:gravity="center"
+                    android:text="MUSIC LIBRARY"
+                    android:textColor="@color/fontColor"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/gradient"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30dp"
+                        android:text="@string/song1"
+                        android:textColor="@color/fontColor"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/playOne"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/gradient"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30dp"
+                        android:text="@string/song2"
+                        android:textColor="@color/fontColor"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/playTwo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/gradient"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30dp"
+                        android:text="@string/song3"
+                        android:textColor="@color/fontColor"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/playThree"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--backto main button-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+
+                >
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/boxcolor"
+                    android:gravity="center"
+                    android:text="BACK to MAIN"
+                    android:textColor="@color/fontColor"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!-- control panel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#01ABDB"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/boxcolor"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currentSong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="current song"
+                android:textColor="@color/fontColor"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#01ABDB" />
+
+
+        <LinearLayout
+            android:id="@+id/control"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/boxcolor"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/stopLib"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/stop" />
+
+            <Button
+                android:id="@+id/playLib"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/play" />
+
+            <Button
+                android:id="@+id/pauseLib"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/pause" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
