@@ -77,18 +77,17 @@ public class Song1 extends AppCompatActivity {
     }
 
     //stop song method from MusicLibrary activity
-    public static void stopMusic(){
+    public void stopMusic(){
         mp.stop();
-        //initialize mediaplayer with current song
-        //mp = MediaPlayer.create(Song1.this, R.raw.fragrance);
-
     }
     //pause song method from MusicLibrary activity
-    public static void pauseMusic (){
+    public  void pauseMusic (){
         mp.pause();
     }
     //start song method from MusicLibrary activity
-    public static void playMusic (){
+    public  void playMusic (){
+        //initialize mediaplayer with current song
+        mp = MediaPlayer.create(Song1.this, R.raw.fragrance);
         mp.start();
     }
 }

@@ -30,14 +30,14 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="80dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@color/boxcolor"
                     android:gravity="center"
-                    android:text="playlist 1 / song 1"
+                    android:text="playlist 1 / song 1\nThis page is the first song's activity, full media player control and album cover."
                     android:textColor="@color/fontColor"
                     android:textStyle="bold" />
 

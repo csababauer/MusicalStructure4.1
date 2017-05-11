@@ -30,14 +30,14 @@
                 <!-- title -->
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="80dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@color/boxcolor"
                     android:gravity="center"
-                    android:text="MUSIC LIBRARY"
+                    android:text="MUSIC LIBRARY\nYou can choose a song (out of 3) to play. There is a music player control buttons and the 'current song' text changes if you select a song. "
                     android:textColor="@color/fontColor"
                     android:textStyle="bold" />
 

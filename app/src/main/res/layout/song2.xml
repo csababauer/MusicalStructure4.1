@@ -37,7 +37,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@color/boxcolor"
                     android:gravity="center"
-                    android:text="playlist 1 / song 2"
+                    android:text="playlist 1 / song 2\nThis page is the second song's activity, full media player control and album cover."
                     android:textColor="@color/fontColor"
                     android:textStyle="bold" />
 
